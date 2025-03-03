@@ -33,7 +33,7 @@ class Bot(commands.AutoShardedBot):
                 env_file.write("DB_USERNAME=root\n")
                 env_file.write("DB_PASSWORD=password\n")
                 env_file.write("DB_NAME=database_name\n")
-            logger.info(".env file created. Please update the TOKEN value.")
+            print(".env file created. Please update the TOKEN value.")
             quit()
 
     async def load_pyc_extension(self, cog_path, cog_name):
@@ -92,8 +92,8 @@ class Bot(commands.AutoShardedBot):
             status=discord.Status.online,
             activity=discord.Activity(
                 type=discord.ActivityType.watching,
-                name="KKPP PVP Players",
-                state="Let's get your guns"
+                name="Infinity Development",
+                state="Alpha Team"
             )
         )
 
