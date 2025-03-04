@@ -46,4 +46,3 @@ class Presence(commands.GroupCog):
 
 async def setup(bot: commands.AutoShardedBot):
     await bot.add_cog(Presence(bot))
-    await bot.tree.sync()
